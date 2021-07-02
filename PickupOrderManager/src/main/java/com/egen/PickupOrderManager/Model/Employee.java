@@ -8,6 +8,7 @@ import java.util.Date;
 public class Employee {
     @Id
     @Column(name = "pick_emp_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long pickEmpId;
 
     @Column(name = "pick_emp_perf_start_dt_tm")

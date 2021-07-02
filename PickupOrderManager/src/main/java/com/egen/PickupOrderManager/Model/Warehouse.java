@@ -10,6 +10,7 @@ import javax.persistence.*;
 public class Warehouse {
     @Id
     @Column(name = "pick_warehouse_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long pickWarehouseId;
 
     @Column(name = "pick_tote_id")

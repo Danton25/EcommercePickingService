@@ -9,6 +9,7 @@ public class Orders {
 
     @Id
     @Column(name = "pick_order_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long pickOrderId;
 
     @Column(name = "pick_order_item_qty")

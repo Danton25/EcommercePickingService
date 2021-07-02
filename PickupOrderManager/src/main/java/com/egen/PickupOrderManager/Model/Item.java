@@ -8,6 +8,7 @@ import javax.persistence.*;
 public class Item {
     @Id
     @Column(name = "pick_item_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long pickItemId;
 
     @Column(name = "pick_item_qty")
